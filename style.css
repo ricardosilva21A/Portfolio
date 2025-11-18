@@ -317,42 +317,44 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
-  position: relative;
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
+.skills-column h2 {
+  margin-bottom: 1rem;
 }
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.skill-card {
+  background-color: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+  border: 1px solid transparent;
 }
 
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+.skill-card:hover {
+  transform: translateY(-4px);
+  background-color: #ffffff;
+  border-color: #e0e0e0;
 }
 
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+.skill-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  color: #444;
+  margin-top: 0.5rem;
+}
+.skill-card.active .skill-details {
+  max-height: 200px; /* controls expansion */
 }
 
-article .icon {
-  cursor: default;
-}
 
 /* PROJECTS SECTION */
 
