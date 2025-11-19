@@ -472,3 +472,30 @@ img.rounded-corners {
 #certificates {
   margin-top: 50px; /* Adiciona espaçamento na parte superior da seção Certificates */
 }
+
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cert-item {
+  position: relative;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+}
+
+.cert-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  background-color: #f7f7f7;
+  padding: 0 10px;
+  border-left: 3px solid #007BFF; /* opcional, destaque visual */
+  margin-top: 5px;
+}
+
+.cert-item:hover .cert-description {
+  max-height: 200px; /* ajusta conforme o conteúdo */
+  padding: 10px;
+}
