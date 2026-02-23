@@ -5,322 +5,332 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ricardo's Portfolio</title>
+  <title>Ricardo Silva - Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
-  <nav id="desktop-nav">
-    <div class="logo">Ricardo Silva</div>
-    <div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Ricardo Silva</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Ricardo Silva</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <div class="hero-image">
+        <img src="./assets/profile1.png" alt="Ricardo Silva profile picture" />
       </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile1.png" class="rounded-corners alt=" Ricardo Silva profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Ricardo Silva</h1>
-      <p class="section__text__p2">I'm a Software Engineer based in Guimarães, Portugal.</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-          Curriculum Vitae
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://linkedin.com/ricardofsilva0'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/ricardosilva21A'" />
+      <div class="hero-content">
+        <h1>Ricardo Silva</h1>
+        <p class="hero-subtitle">Software Engineer</p>
+        <p class="hero-description">Building scalable and efficient software solutions</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
       </div>
     </div>
   </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <!-- <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div> -->
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>2+ years <br />Frontend Development</p>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          I'm a Software Engineer and emerging technology leader with a unique blend of technical expertise and people management skills. With a degree in Computer Systems Engineering and 2+ years of professional experience, I combine solid development capabilities with a passion for building high-performing teams and delivering strategic value.
+        </p>
+        <p>
+          Beyond coding, I excel in cross-functional collaboration, project coordination, and translating complex technical concepts for diverse stakeholders. I'm driven by continuous learning, adaptability, and the belief that great software is built by great teams working towards a shared vision.
+        </p>
+        
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <h4>Technical Leadership</h4>
+            <p>Full-stack development expertise combined with architectural thinking and best practices</p>
           </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>Computer Systems Engineering Degree</p>
+          <div class="highlight-card">
+            <h4>People & Teams</h4>
+            <p>Strong communicator with experience in Agile environments and cross-functional collaboration</p>
+          </div>
+          <div class="highlight-card">
+            <h4>Strategic Value</h4>
+            <p>Problem solver focused on delivering measurable results and driving meaningful impact</p>
           </div>
         </div>
-        <div class="text-container">
-          <p>
-            I have been passionate about technology from a young age, developing skills in video and photo editing,
-            programming, and digital creation early on. Alongside my studies in Computer Engineering, I have also gained
-            valuable communication and interpersonal skills through professional experience in sales. Outside the
-            technical field, I enjoy competitive gaming, climbing, nature trails, and extreme sports such as
-            snowboarding and surfing, maintaining a balanced and active lifestyle.
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3>Services and Materials Specialist</h3>
+            <span class="experience-period">June 2025 - Present</span>
+          </div>
+          <p class="experience-company">TMG - MGC</p>
+          <ul class="experience-details">
+            <li>Managed billing and invoicing systems using SAP and INTEX platforms</li>
+            <li>Utilized ManWinWin industrial management software for operational support</li>
+            <li>Coordinated with suppliers to manage service and material procurement</li>
+            <li>Managed inventory control, pricing strategies, and cost optimization</li>
+            <li>Ensured accurate record-keeping and timely processing of all transactions</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3>Lifeguard & Swimming Instructor</h3>
+            <span class="experience-period">June 2022 - September 2022</span>
+          </div>
+          <p class="experience-company">Independent</p>
+          <ul class="experience-details">
+            <li>Provided water safety monitoring and emergency response</li>
+            <li>Certified in First Aid and emergency rescue procedures</li>
+            <li>Ensured compliance with safety protocols and regulations</li>
+            <li>Maintained vigilance and rapid response capabilities in aquatic environments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      
+      <div class="skills-wrapper">
+        <!-- Technical Skills -->
+        <div class="skills-column">
+          <div class="skills-category-card">
+            <h3 class="skills-category-title">Technical Skills</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Frontend Development</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 85%"></div>
+                </div>
+                <span class="skill-tech">HTML5, CSS3, JavaScript, React</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Backend Development</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 70%"></div>
+                </div>
+                <span class="skill-tech">Node.js, Express, Python</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Database Management</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 75%"></div>
+                </div>
+                <span class="skill-tech">SQL, MongoDB, PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Tools & Platforms</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 80%"></div>
+                </div>
+                <span class="skill-tech">Git, Docker, Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Management & Soft Skills -->
+        <div class="skills-column">
+          <div class="skills-category-card">
+            <h3 class="skills-category-title">Leadership & Management</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Team Collaboration</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 90%"></div>
+                </div>
+                <span class="skill-tech">Agile, Scrum, Cross-functional teams</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Project Management</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 75%"></div>
+                </div>
+                <span class="skill-tech">Task prioritization, Timeline management</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Communication</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 85%"></div>
+                </div>
+                <span class="skill-tech">Stakeholder engagement, Technical writing</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Problem Solving</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 88%"></div>
+                </div>
+                <span class="skill-tech">Critical thinking, Strategic approach</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="languages-container">
+        <h3 class="section-subtitle">Languages</h3>
+        <div class="languages-grid">
+          <div class="language-card">
+            <h4>Portuguese</h4>
+            <p class="language-level">Native</p>
+            <div class="language-badge native">PT</div>
+          </div>
+          <div class="language-card">
+            <h4>English</h4>
+            <p class="language-level">B2 Upper-Intermediate</p>
+            <div class="language-badge b2">EN</div>
+          </div>
+          <div class="language-card">
+            <h4>German</h4>
+            <p class="language-level">A1 - Currently Learning</p>
+            <div class="language-badge a1">DE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>CloudVault</h3>
+          <p class="project-description">
+            A secure password manager application built with Python and Tkinter. 
+            Features encryption and SQL database integration for safe credential storage.
           </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-
-  <section id="experience">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Experience & Skills</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-
-      <!-- Technical Skills -->
-      <div class="details-container">
-        <h2 class="experience-sub-title">Technical Skills</h2>
-        <br>
-        <div class="article-container">
-          <article>
-            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-            <div>
-              <h3>HTML</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-            <div>
-              <h3>CSS / SASS</h3>
-              <p>Experienced / Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-            <div>
-              <h3>JavaScript / TypeScript</h3>
-              <p>Basic</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-            <div>
-              <h3>Node.js / Express.js</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-            <div>
-              <h3>PostgreSQL / Material UI</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <!-- Management / Business Skills -->
-      <div class="details-container">
-        <h2 class="experience-sub-title">Management Skills</h2>
-        <br>
-        <div class="article-container">
-          <article>
-            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-            <div>
-              <h3>ManWinWin</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-            <div>
-              <h3>SAP</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <!-- Personal / Soft Skills -->
-      <div class="details-container">
-        <h2 class="experience-sub-title">Personal Skills</h2>
-        <br>
-        <div class="article-container">
-          <article>
-            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-            <div>
-              <h3>Proactivity</h3>
-              <p>Strong</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-            <div>
-              <h3>Teamwork</h3>
-              <p>Strong</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-            <div>
-              <h3>Problem Solving</h3>
-              <p>Strong</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-            <div>
-              <h3>Communication</h3>
-              <p>Strong</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-</section>
-
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <!-- Projeto CloudVault -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Tkinter</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Encryption</span>
           </div>
-          <h2 class="experience-sub-title project-title">CloudVault</h2>
-          <p>
-            This is a simple password manager application built with Python and
-            Tkinter, designed to securely store and manage passwords using
-            encryption, and used SQL database.
+          <a href="https://github.com/ricardosilva21A/CloudVault" class="project-link" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h3>MuseHub</h3>
+          <p class="project-description">
+            A web platform integrating major museums worldwide. Built with HTML, Bootstrap, 
+            TypeScript, and OpenStreetMap for interactive mapping functionalities.
           </p>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/ricardosilva21A/CloudVault'">
-              Github
-            </button>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">Bootstrap</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">OpenStreetMap</span>
           </div>
+          <a href="https://github.com/pokepark99/Programacao-Web" class="project-link" target="_blank">View on GitHub</a>
         </div>
-
-        <!-- Projeto MuseHub -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">MuseHub</h2>
-          <p>
-            The project is about creating a web page that integrates major museums
-            worldwide using HTML, Bootstrap, and TypeScript, and incorporates
-            OpenStreetMap for mapping functionalities.
-          </p>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/pokepark99/Programacao-Web'">
-              Github
-            </button>
-          </div>
-        </div>
-
-        <!-- Outros projetos podem ser adicionados aqui -->
-
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-
-
-  <section id="certificates">
-  <p class="section__text__p1">View My</p>
-  <h1 class="title">Certificates</h1>
-
-  <ul class="cert-list">
-    <li class="cert-item">
-      <strong>Engineering Applications in Python</strong> – University of Limerick (May–Jun 2024) · 3 ECTS
-      <div class="cert-description">
-        Worked on real-world engineering projects using Python to automate calculations and analyze data.
-      </div>
-    </li>
-    <li class="cert-item">
-      <strong>Engineering Applications in Research Challenge AI2</strong> – RUN-EU (Jun 2024) · 1 ECTS
-      <div class="cert-description">
-        Participated in AI research challenges and collaborated with international teams on project solutions.
-      </div>
-    </li>
-    <li class="cert-item">
-      <strong>STEAM Microcredential in Generative Artificial Intelligence</strong> – IPCA (Set 2025) · 1 ECTS
-      <div class="cert-description">
-        Learned foundational concepts of generative AI and implemented small projects to demonstrate practical applications.
-      </div>
-    </li>
-  </ul>
-</section>
-    <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='./#contact'">
-  </section>
-
-  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:ricardosethsilva@gmail.com">ricardosethsilva@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://linkedin.com/ricardofsilva0'">LinkedIn</a></p>
       </div>
     </div>
   </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Education & Certifications</h2>
+      
+      <div class="education-list">
+        <div class="education-item">
+          <h3>Computer Systems Engineering</h3>
+          <p class="education-institution">IPCA</p>
+          <p class="education-year">2027</p>
+        </div>
+
+        <div class="education-item expandable">
+          <div class="education-header">
+            <h3>Engineering Applications in Python</h3>
+            <p class="education-institution">University of Limerick, Ireland (with Dell)</p>
+            <p class="education-year">May - June 2024</p>
+          </div>
+          <div class="education-details">
+            <p>Participated in a blended technical program (online + onsite) focused on cloud technologies and emerging IT trends. Collaborated with engineers across Europe, discussed real-world tech developments, and built a guided cloud project (CloudVault) incorporating security best practices and cloud architecture principles.</p>
+          </div>
+        </div>
+
+        <div class="education-item expandable">
+          <div class="education-header">
+            <h3>Engineering Applications in Research Challenge AI2</h3>
+            <p class="education-institution">RUN-EU</p>
+            <p class="education-year">June 2024</p>
+          </div>
+          <div class="education-details">
+            <p>Focused on research and innovative solutions for improving ecological activities in the Barcelos region. Worked collaboratively with professionals from diverse areas to deliver impactful solutions addressing environmental sustainability challenges.</p>
+          </div>
+        </div>
+
+        <div class="education-item expandable">
+          <div class="education-header">
+            <h3>STEAM Microcredential in Generative Artificial Intelligence</h3>
+            <p class="education-institution">IPCA</p>
+            <p class="education-year">September 2025</p>
+          </div>
+          <div class="education-details">
+            <p>Online microcredential focused on understanding AI capabilities and maximizing their potential. Studied the power of effective prompting, practical AI applications, and how to leverage AI tools across different domains.</p>
+          </div>
+        </div>
       </div>
-    </nav>
-    <p>Copyright &#169; 2024 Ricardo Silva. All Rights Reserved.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">Feel free to reach out for any inquiries or collaboration opportunities.</p>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <h3>Email</h3>
+          <a href="mailto:refds1505@gmail.com">refds1505@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <h3>LinkedIn</h3>
+          <a href="https://linkedin.com/in/ricardofsilva0" target="_blank">linkedin.com/in/ricardofsilva0</a>
+        </div>
+        <div class="contact-item">
+          <h3>GitHub</h3>
+          <a href="https://github.com/ricardosilva21A" target="_blank">github.com/ricardosilva21A</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Ricardo Silva. All rights reserved.</p>
+    </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 
