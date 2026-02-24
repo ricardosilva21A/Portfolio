@@ -1,3 +1,23 @@
+// Hero title shrink effect on scroll
+const heroTitleBg = document.querySelector('.hero-title-bg');
+const heroSection = document.getElementById('hero');
+
+window.addEventListener('scroll', () => {
+  const scrolled = window.pageYOffset;
+  const heroSectionTop = heroSection.offsetTop;
+  const heroSectionHeight = heroSection.offsetHeight;
+  
+  // Calculate scroll progress (0 to 1) - only while in hero section
+  const scrollProgress = Math.max(0, Math.min((scrolled - heroSectionTop) / heroSectionHeight, 1));
+  
+  // Scale from 15vw to 2.5vw (approximately 3.5rem normal size)
+  const minSize = 2.5;
+  const maxSize = 15;
+  const newSize = maxSize - (scrollProgress * (maxSize - minSize));
+  
+  heroTitleBg.style.fontSize = newSize + 'vw';
+});
+
 // Hide navbar on scroll down, show on scroll up
 let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');

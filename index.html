@@ -8,6 +8,7 @@
   <title>Ricardo Silva - Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="effects.css" />
 </head>
 
 <body>
@@ -27,24 +28,31 @@
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
+    <h1 class="hero-title-bg">Ricardo Silva</h1>
     <div class="hero-container">
       <div class="hero-image">
         <img src="./assets/profile1.png" alt="Ricardo Silva profile picture" />
       </div>
       <div class="hero-content">
-        <h1>Ricardo Silva</h1>
         <p class="hero-subtitle">Software Engineer</p>
         <p class="hero-description">Building scalable and efficient software solutions</p>
         <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="https://github.com/ricardosilva21A" class="btn btn-primary" target="_blank">View My Work</a>
           <a href="#contact" class="btn btn-secondary">Get in Touch</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Floating Elements -->
+  <div class="floating-bg">
+    <div class="float-shape float-1"></div>
+    <div class="float-shape float-2"></div>
+    <div class="float-shape float-3"></div>
+  </div>
+
   <!-- About Section -->
-  <section id="about" class="section">
+  <section id="about" class="section reveal">
     <div class="container">
       <h2 class="section-title">About Me</h2>
       <div class="about-content">
@@ -56,15 +64,15 @@
         </p>
         
         <div class="about-highlights">
-          <div class="highlight-card">
+          <div class="highlight-card reveal-card">
             <h4>Technical Leadership</h4>
             <p>Full-stack development expertise combined with architectural thinking and best practices</p>
           </div>
-          <div class="highlight-card">
+          <div class="highlight-card reveal-card">
             <h4>People & Teams</h4>
             <p>Strong communicator with experience in Agile environments and cross-functional collaboration</p>
           </div>
-          <div class="highlight-card">
+          <div class="highlight-card reveal-card">
             <h4>Strategic Value</h4>
             <p>Problem solver focused on delivering measurable results and driving meaningful impact</p>
           </div>
@@ -74,7 +82,7 @@
   </section>
 
   <!-- Experience Section -->
-  <section id="experience" class="section">
+  <section id="experience" class="section reveal">
     <div class="container">
       <h2 class="section-title">Professional Experience</h2>
       <div class="experience-list">
@@ -111,7 +119,7 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="section">
+  <section id="skills" class="section reveal">
     <div class="container">
       <h2 class="section-title">Skills & Expertise</h2>
       
@@ -216,11 +224,11 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="section">
+  <section id="projects" class="section reveal">
     <div class="container">
       <h2 class="section-title">Featured Projects</h2>
       <div class="projects-grid">
-        <div class="project-card">
+        <div class="project-card reveal-card">
           <h3>CloudVault</h3>
           <p class="project-description">
             A secure password manager application built with Python and Tkinter. 
@@ -235,7 +243,7 @@
           <a href="https://github.com/ricardosilva21A/CloudVault" class="project-link" target="_blank">View on GitHub</a>
         </div>
 
-        <div class="project-card">
+        <div class="project-card reveal-card">
           <h3>MuseHub</h3>
           <p class="project-description">
             A web platform integrating major museums worldwide. Built with HTML, Bootstrap, 
@@ -332,6 +340,7 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="effects.js"></script>
 </body>
 
 </html>

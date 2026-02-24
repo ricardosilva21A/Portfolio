@@ -1,0 +1,341 @@
+/* ===== ADVANCED EFFECTS ===== */
+
+/* Loading Bar */
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(to right, #0066cc, #0052a3);
+  width: 0;
+  z-index: 9999;
+  animation: loading 2s ease-in-out forwards;
+}
+
+@keyframes loading {
+  0% { width: 0%; }
+  50% { width: 70%; }
+  100% { width: 100%; }
+}
+
+/* Scroll Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease-out;
+}
+
+.reveal-card {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.reveal-card.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease-out;
+}
+
+/* Floating Elements Background */
+.floating-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.03;
+}
+
+.float-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: #0066cc;
+}
+
+.float-1 {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: 10%;
+  animation: float 20s infinite ease-in-out;
+}
+
+.float-2 {
+  width: 150px;
+  height: 150px;
+  top: 60%;
+  right: 10%;
+  animation: float 25s infinite ease-in-out reverse;
+}
+
+.float-3 {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  animation: float 30s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(50px); }
+}
+
+/* Gradient Animation */
+.hero {
+  background: linear-gradient(-45deg, #1a1a1a, #2d2d2d, #1a3a4a, #1a1a1a) !important;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Typewriter Effect */
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid #0066cc;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #0066cc; }
+}
+
+/* Glow Effect on Hover */
+.btn {
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 20px rgba(0, 102, 204, 0.6);
+  transform: translateY(-4px);
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  transform: translateY(-4px);
+}
+
+/* Glass Morphism Cards */
+.project-card,
+.highlight-card,
+.education-item,
+.contact-item {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover,
+.highlight-card:hover,
+.education-item:hover,
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 102, 204, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 102, 204, 0.2);
+}
+
+/* Underline Animation for Links */
+.nav-links a,
+.project-link,
+.contact-item a {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-links a::after,
+.project-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #0066cc;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.project-link:hover::after {
+  width: 100%;
+}
+
+/* Skill Level Animation */
+.skill-level {
+  animation: fillSkill 1.5s ease-out forwards;
+  background: linear-gradient(90deg, #0066cc, #0052a3);
+}
+
+@keyframes fillSkill {
+  from { width: 0 !important; }
+  to { width: inherit !important; }
+}
+
+/* Experience Items Hover */
+.experience-item {
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.experience-item:hover {
+  border-left-color: #0066cc;
+  transform: translateX(5px);
+  background: linear-gradient(90deg, rgba(0, 102, 204, 0.05), transparent);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Parallax Text */
+.hero-title-bg {
+  will-change: transform;
+}
+
+/* Skills Category Cards */
+.skills-category-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.skills-category-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 102, 204, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 102, 204, 0.15);
+}
+
+/* Language Cards */
+.language-card {
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.language-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 102, 204, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 102, 204, 0.1);
+}
+
+/* Counter Animation */
+.counter-value {
+  transition: color 0.3s ease;
+}
+
+.counter-value.animated {
+  color: #0066cc;
+  font-weight: bold;
+}
+
+/* Active Section Indicator */
+.section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, #0066cc, #0052a3);
+  transition: width 0.6s ease;
+}
+
+.section.active::before {
+  width: 50px;
+}
+
+/* Mouse Follow Glow */
+.mouse-glow {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(0, 102, 204, 0.3);
+  pointer-events: none;
+  z-index: 9998;
+  mix-blend-mode: screen;
+}
+
+/* Copy to Clipboard Toast */
+.copy-toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 102, 204, 0.9);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  animation: slideIn 0.3s ease, slideOut 0.3s ease 2.7s;
+  z-index: 10000;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+}
+
+/* Responsive Glass Morphism for Mobile */
+@media (max-width: 768px) {
+  .project-card,
+  .highlight-card,
+  .education-item,
+  .contact-item,
+  .skills-category-card,
+  .language-card {
+    backdrop-filter: blur(5px);
+  }
+
+  .float-shape {
+    opacity: 0.015;
+  }
+
+  .copy-toast {
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    text-align: center;
+  }
+}

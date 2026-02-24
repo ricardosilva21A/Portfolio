@@ -7,10 +7,6 @@
     font-size: 0.85rem;
   }
 
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
   .hero-subtitle {
     font-size: 1.2rem;
   }
@@ -74,10 +70,6 @@
   .hero {
     padding: 60px 20px;
     min-height: 400px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
   }
 
   .hero-image img {
